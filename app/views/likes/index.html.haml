@@ -1,0 +1,6 @@
+%h1 Likes#index
+- @media.each_with_index do |media, i|
+  %p
+    = i
+  %p
+    = image_tag media.images.standard_resolution.url

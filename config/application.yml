@@ -1,0 +1,17 @@
+# config/application.yml
+defaults: &defaults
+  instagram_callback_url: "https://commerce-staging.wellmatchoffers.com"
+
+development:
+  <<: *defaults
+  instagram_callback_url: "http://localhost:3005/oauth/callback"
+
+test:
+  <<: *defaults
+  instagram_callback_url: "http://localhost:4200"
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
